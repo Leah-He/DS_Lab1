@@ -55,10 +55,16 @@ public class Lab1 {
 	*/
 	   public static boolean seek(int array[],int len,int target)
 	   {
-   
-	      return false;      
-	  	
-	      
+		   if (array == null || len <= 0) {
+			   return false; 
+		   } else {
+			   for(int i = 0; i < len; i++) {
+				   if (array [i] == target) {
+					   return true;
+				   }
+			   }
+		   } 
+		   return false; // why?
 	   }
 
 
