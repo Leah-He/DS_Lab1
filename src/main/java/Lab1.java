@@ -8,8 +8,16 @@ public class Lab1 {
 	*/
 	   public static int squares(int n)
 	   {
-	   
-	      return 0;  
+		   if (n < 0) {
+			   return -1;
+			   
+		   } else {
+			   int sum = 0;
+			   for (int i = 1; i <= n; i++) {
+				   sum += i*i;
+			   }
+			   return sum;
+		   }     
 	   
 	   }
 
@@ -22,8 +30,21 @@ public class Lab1 {
 	*/
 	   public static int maxIndex(int array[],int len)
 	   {
-   
-	      return 0;
+		   if (array == null || len <= 0 ) {
+			   return -1;
+		   } else {
+			   int max = array[0];
+			   int maxindex = 0;
+			   for (int i = 0; i < len; i++) {
+				   if (array[i] > max) {
+					   max = array[i];
+					   maxindex = i;
+					   System.out.println(max);
+					   System.out.println(maxindex);
+				   }   
+			   }
+			   return max & maxindex;
+		   }
 	   }
 
 	/**
