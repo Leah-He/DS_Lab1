@@ -81,12 +81,13 @@ public class Lab1 {
 		   if (n < 1) {
 			   return 0;
 		   } else {
-			   int fir = 1;
+			   int fir = 0;
 			   int sec = 1;
-			   for (int i = 0; i < n; i++) {
+			   for (int i = 1; i < n; i++) {
 				   int znum = fir;
 				   fir = sec;
 				   sec += znum;
+				  // System.out.println(sec);
 			   }
 			   return sec;
 		   }
