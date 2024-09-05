@@ -78,7 +78,18 @@ public class Lab1 {
 	*/
 	   public static int fib(int n)
 	   {
-	      return 0;
+		   if (n < 1) {
+			   return 0;
+		   } else {
+			   int fir = 1;
+			   int sec = 1;
+			   for (int i = 0; i < n; i++) {
+				   int znum = fir;
+				   fir = sec;
+				   sec += znum;
+			   }
+			   return sec;
+		   }
 	   }
 
 }
