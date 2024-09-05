@@ -34,16 +34,16 @@ public class Lab1 {
 			   return -1;
 		   } else {
 			   int max = array[0];
-			   int maxindex = 0;
-			   for (int i = 0; i < len; i++) {
+			   int mindex = 0;
+			   for (int i = 1; i < len; i++) {
 				   if (array[i] > max) {
 					   max = array[i];
-					   maxindex = i;
-					   System.out.println(max);
-					   System.out.println(maxindex);
+					   mindex = i;
+					   //System.out.println(max);
+					   //System.out.println(mindex);
 				   }   
 			   }
-			   return maxindex;
+			   return mindex;
 		   }
 	   }
 
