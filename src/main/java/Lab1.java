@@ -43,7 +43,7 @@ public class Lab1 {
 					   System.out.println(maxindex);
 				   }   
 			   }
-			   return max & maxindex;
+			   return maxindex;
 		   }
 	   }
 
